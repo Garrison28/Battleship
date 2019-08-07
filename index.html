@@ -14,111 +14,339 @@
 
     <p>Sink the enemy ships by clicking the squares on the board</p>
 
-    <div id="gameBoard" class="grid">
-        <table id="Battleship" class="water">
-            <tbody>
-                <tr class="cells" id="columns">
-                    <td class="box"></td>
-                    <td class="box">0</td>
-                    <td class="box">1</td>
-                    <td class="box">2</td>
-                    <td class="box">3</td>
-                    <td class="box">4</td>
-                    <td class="box">5</td>
-                    <td class="box">6</td>
-                </tr>
-                <!-- battleship row 0 -->
-                <tr class="cells" id="row0">
-                    <th class="box">A</th>
-                    <td class="box" id="00"></td>
-                    <td class="box" id="01"></td>
-                    <td class="box" id="02"></td>
-                    <td class="box" id="03"></td>
-                    <td class="box" id="04"></td>
-                    <td class="box" id="05"></td>
-                    <td class="box" id="06"></td>
-                </tr>
-                <!-- battleship row 1 -->
-                <tr class="cells" id="row1">
-                    <th class="box">B</th>
-                    <td class="box" id="10"></td>
-                    <td class="box" id="11"></td>
-                    <td class="box" id="12"></td>
-                    <td class="box" id="13"></td>
-                    <td class="box" id="14"></td>
-                    <td class="box" id="15"></td>
-                    <td class="box" id="16"></td>
-                </tr>
-                <!-- battleship row 2 -->
-                <tr class="cells" id="row2">
-                    <th class="box">C</th>
-                    <td class="box" id="20"></td>
-                    <td class="box" id="21"></td>
-                    <td class="box" id="22"></td>
-                    <td class="box" id="23"></td>
-                    <td class="box" id="24"></td>
-                    <td class="box" id="25"></td>
-                    <td class="box" id="26"></td>
-                </tr>
-                <!-- battleship row 3 -->
-                <tr class="cells" id="row3">
-                    <th class="box">D</th>
-                    <td class="box" id="30"></td>
-                    <td class="box" id="31"></td>
-                    <td class="box" id="32"></td>
-                    <td class="box" id="33"></td>
-                    <td class="box" id="34"></td>
-                    <td class="box" id="35"></td>
-                    <td class="box" id="36"></td>
-                </tr>
-                <!-- battleship row 4 -->
-                <tr class="cells" id="row4">
-                    <th class="box">E</th>
-                    <td class="box" id="40"></td>
-                    <td class="box" id="41"></td>
-                    <td class="box" id="42"></td>
-                    <td class="box" id="43"></td>
-                    <td class="box" id="44"></td>
-                    <td class="box" id="45"></td>
-                    <td class="box" id="46"></td>
-                </tr>
-                <!-- battleship row 5 -->
-                <tr class="cells" id="row5">
-                    <th class="box">F</th>
-                    <td class="box" id="50"></td>
-                    <td class="box" id="51"></td>
-                    <td class="box" id="52"></td>
-                    <td class="box" id="53"></td>
-                    <td class="box" id="54"></td>
-                    <td class="box" id="55"></td>
-                    <td class="box" id="56"></td>
-                </tr>
-                <!-- battleship row 6 -->
-                <tr class="cells" id="row6">
-                    <th class="box">G</th>
-                    <td class="box" id="60"></td>
-                    <td class="box" id="61"></td>
-                    <td class="box" id="62"></td>
-                    <td class="box" id="63"></td>
-                    <td class="box" id="64"></td>
-                    <td class="box" id="65"></td>
-                    <td class="box" id="66"></td>
-                </tr>
-            </tbody>
-        </table>
-        </hr>
-        <br>
+    <div id="gameBoardContainers" class="container">
+        <div id="playerGameBoardContainer" class="Grid">
+            <table id="Battleship" class="water">
+                <tbody>
+                    <tr class="cells" id="columns">
+                        <td class="box"></td>
+                        <td class="box">0</td>
+                        <td class="box">1</td>
+                        <td class="box">2</td>
+                        <td class="box">3</td>
+                        <td class="box">4</td>
+                        <td class="box">5</td>
+                        <td class="box">6</td>
+                        <td class="box">7</td>
+                        <td class="box">8</td>
+                        <td class="box">9</td>
+                    </tr>
+                    <!-- battleship row 0 -->
+                    <tr class="cells" id="row0">
+                        <th class="box">A</th>
+                        <td class="box" id="00"></td>
+                        <td class="box" id="01"></td>
+                        <td class="box" id="02"></td>
+                        <td class="box" id="03"></td>
+                        <td class="box" id="04"></td>
+                        <td class="box" id="05"></td>
+                        <td class="box" id="06"></td>
+                        <td class="box" id="07"></td>
+                        <td class="box" id="08"></td>
+                        <td class="box" id="09"></td>
+                    </tr>
+                    <!-- battleship row 1 -->
+                    <tr class="cells" id="row1">
+                        <th class="box">B</th>
+                        <td class="box" id="10"></td>
+                        <td class="box" id="11"></td>
+                        <td class="box" id="12"></td>
+                        <td class="box" id="13"></td>
+                        <td class="box" id="14"></td>
+                        <td class="box" id="15"></td>
+                        <td class="box" id="16"></td>
+                        <td class="box" id="17"></td>
+                        <td class="box" id="18"></td>
+                        <td class="box" id="19"></td>
+                    </tr>
+                    <!-- battleship row 2 -->
+                    <tr class="cells" id="row2">
+                        <th class="box">C</th>
+                        <td class="box" id="20"></td>
+                        <td class="box" id="21"></td>
+                        <td class="box" id="22"></td>
+                        <td class="box" id="23"></td>
+                        <td class="box" id="24"></td>
+                        <td class="box" id="25"></td>
+                        <td class="box" id="26"></td>
+                        <td class="box" id="27"></td>
+                        <td class="box" id="28"></td>
+                        <td class="box" id="29"></td>
+                    </tr>
+                    <!-- battleship row 3 -->
+                    <tr class="cells" id="row3">
+                        <th class="box">D</th>
+                        <td class="box" id="30"></td>
+                        <td class="box" id="31"></td>
+                        <td class="box" id="32"></td>
+                        <td class="box" id="33"></td>
+                        <td class="box" id="34"></td>
+                        <td class="box" id="35"></td>
+                        <td class="box" id="36"></td>
+                        <td class="box" id="37"></td>
+                        <td class="box" id="38"></td>
+                        <td class="box" id="39"></td>
+                    </tr>
+                    <!-- battleship row 4 -->
+                    <tr class="cells" id="row4">
+                        <th class="box">E</th>
+                        <td class="box" id="40"></td>
+                        <td class="box" id="41"></td>
+                        <td class="box" id="42"></td>
+                        <td class="box" id="43"></td>
+                        <td class="box" id="44"></td>
+                        <td class="box" id="45"></td>
+                        <td class="box" id="46"></td>
+                        <td class="box" id="47"></td>
+                        <td class="box" id="48"></td>
+                        <td class="box" id="49"></td>
+                    </tr>
+                    <!-- battleship row 5 -->
+                    <tr class="cells" id="row5">
+                        <th class="box">F</th>
+                        <td class="box" id="50"></td>
+                        <td class="box" id="51"></td>
+                        <td class="box" id="52"></td>
+                        <td class="box" id="53"></td>
+                        <td class="box" id="54"></td>
+                        <td class="box" id="55"></td>
+                        <td class="box" id="56"></td>
+                        <td class="box" id="57"></td>
+                        <td class="box" id="58"></td>
+                        <td class="box" id="59"></td>
+                    </tr>
+                    <!-- battleship row 6 -->
+                    <tr class="cells" id="row6">
+                        <th class="box">G</th>
+                        <td class="box" id="60"></td>
+                        <td class="box" id="61"></td>
+                        <td class="box" id="62"></td>
+                        <td class="box" id="63"></td>
+                        <td class="box" id="64"></td>
+                        <td class="box" id="65"></td>
+                        <td class="box" id="66"></td>
+                        <td class="box" id="67"></td>
+                        <td class="box" id="68"></td>
+                        <td class="box" id="69"></td>
+                    </tr>
+                    <!-- battleship row 7 -->
+                    <tr class="cells" id="row7">
+                        <th class="box">H</th>
+                        <td class="box" id="70"></td>
+                        <td class="box" id="71"></td>
+                        <td class="box" id="72"></td>
+                        <td class="box" id="73"></td>
+                        <td class="box" id="74"></td>
+                        <td class="box" id="75"></td>
+                        <td class="box" id="76"></td>
+                        <td class="box" id="77"></td>
+                        <td class="box" id="78"></td>
+                        <td class="box" id="79"></td>
+                    </tr>
+                    <!-- battleship row 8 -->
+                    <tr class="cells" id="row8">
+                        <th class="box">I</th>
+                        <td class="box" id="80"></td>
+                        <td class="box" id="81"></td>
+                        <td class="box" id="82"></td>
+                        <td class="box" id="83"></td>
+                        <td class="box" id="84"></td>
+                        <td class="box" id="85"></td>
+                        <td class="box" id="86"></td>
+                        <td class="box" id="87"></td>
+                        <td class="box" id="88"></td>
+                        <td class="box" id="89"></td>
+                    </tr>
+                    <!-- battleship row 9 -->
+                    <tr class="cells" id="row9">
+                        <th class="box">J</th>
+                        <td class="box" id="90"></td>
+                        <td class="box" id="91"></td>
+                        <td class="box" id="92"></td>
+                        <td class="box" id="93"></td>
+                        <td class="box" id="94"></td>
+                        <td class="box" id="95"></td>
+                        <td class="box" id="96"></td>
+                        <td class="box" id="97"></td>
+                        <td class="box" id="98"></td>
+                        <td class="box" id="99"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </hr>
+            <br>
 
+        </div>
+
+
+        <div id="aiGameBoardContainer" class="Grid">
+            <table id="Battleship" class="water">
+                <tbody>
+                    <tr class="cells" id="columns">
+                        <td class="box"></td>
+                        <td class="box">0</td>
+                        <td class="box">1</td>
+                        <td class="box">2</td>
+                        <td class="box">3</td>
+                        <td class="box">4</td>
+                        <td class="box">5</td>
+                        <td class="box">6</td>
+                        <td class="box">7</td>
+                        <td class="box">8</td>
+                        <td class="box">9</td>
+                    </tr>
+                    <!-- battleship row 0 -->
+                    <tr class="cells" id="airow0">
+                        <th class="box">A</th>
+                        <td class="box" id="ai00"></td>
+                        <td class="box" id="ai01"></td>
+                        <td class="box" id="ai02"></td>
+                        <td class="box" id="ai03"></td>
+                        <td class="box" id="ai04"></td>
+                        <td class="box" id="ai05"></td>
+                        <td class="box" id="ai06"></td>
+                        <td class="box" id="ai07"></td>
+                        <td class="box" id="ai08"></td>
+                        <td class="box" id="ai09"></td>
+                    </tr>
+                    <!-- battleship row 1 -->
+                    <tr class="cells" id="airow1">
+                        <th class="box">B</th>
+                        <td class="box" id="ai10"></td>
+                        <td class="box" id="ai11"></td>
+                        <td class="box" id="ai12"></td>
+                        <td class="box" id="ai13"></td>
+                        <td class="box" id="ai14"></td>
+                        <td class="box" id="ai15"></td>
+                        <td class="box" id="ai16"></td>
+                        <td class="box" id="ai17"></td>
+                        <td class="box" id="ai18"></td>
+                        <td class="box" id="ai19"></td>
+                    </tr>
+                    <!-- battleship row 2 -->
+                    <tr class="cells" id="row2">
+                        <th class="box">C</th>
+                        <td class="box" id="ai20"></td>
+                        <td class="box" id="ai21"></td>
+                        <td class="box" id="ai22"></td>
+                        <td class="box" id="ai23"></td>
+                        <td class="box" id="ai24"></td>
+                        <td class="box" id="ai25"></td>
+                        <td class="box" id="ai26"></td>
+                        <td class="box" id="ai27"></td>
+                        <td class="box" id="ai28"></td>
+                        <td class="box" id="ai29"></td>
+                    </tr>
+                    <!-- battleship row 3 -->
+                    <tr class="cells" id="row3">
+                        <th class="box">D</th>
+                        <td class="box" id="ai30"></td>
+                        <td class="box" id="ai31"></td>
+                        <td class="box" id="ai32"></td>
+                        <td class="box" id="ai33"></td>
+                        <td class="box" id="ai34"></td>
+                        <td class="box" id="ai35"></td>
+                        <td class="box" id="ai36"></td>
+                        <td class="box" id="ai37"></td>
+                        <td class="box" id="ai38"></td>
+                        <td class="box" id="ai39"></td>
+                    </tr>
+                    <!-- battleship row 4 -->
+                    <tr class="cells" id="row4">
+                        <th class="box">E</th>
+                        <td class="box" id="ai40"></td>
+                        <td class="box" id="ai41"></td>
+                        <td class="box" id="ai42"></td>
+                        <td class="box" id="ai43"></td>
+                        <td class="box" id="ai44"></td>
+                        <td class="box" id="ai45"></td>
+                        <td class="box" id="ai46"></td>
+                        <td class="box" id="ai47"></td>
+                        <td class="box" id="ai48"></td>
+                        <td class="box" id="ai49"></td>
+                    </tr>
+                    <!-- battleship row 5 -->
+                    <tr class="cells" id="row5">
+                        <th class="box">F</th>
+                        <td class="box" id="ai50"></td>
+                        <td class="box" id="ai51"></td>
+                        <td class="box" id="ai52"></td>
+                        <td class="box" id="ai53"></td>
+                        <td class="box" id="ai54"></td>
+                        <td class="box" id="ai55"></td>
+                        <td class="box" id="ai56"></td>
+                        <td class="box" id="ai57"></td>
+                        <td class="box" id="ai58"></td>
+                        <td class="box" id="ai59"></td>
+                    </tr>
+                    <!-- battleship row 6 -->
+                    <tr class="cells" id="row6">
+                        <th class="box">G</th>
+                        <td class="box" id="ai60"></td>
+                        <td class="box" id="ai61"></td>
+                        <td class="box" id="ai62"></td>
+                        <td class="box" id="ai63"></td>
+                        <td class="box" id="ai64"></td>
+                        <td class="box" id="ai65"></td>
+                        <td class="box" id="ai66"></td>
+                        <td class="box" id="ai67"></td>
+                        <td class="box" id="ai68"></td>
+                        <td class="box" id="ai69"></td>
+                    </tr>
+                    <tr class="cells" id="row7">
+                        <th class="box">H</th>
+                        <td class="box" id="ai70"></td>
+                        <td class="box" id="ai71"></td>
+                        <td class="box" id="ai72"></td>
+                        <td class="box" id="ai73"></td>
+                        <td class="box" id="ai74"></td>
+                        <td class="box" id="ai75"></td>
+                        <td class="box" id="ai76"></td>
+                        <td class="box" id="ai77"></td>
+                        <td class="box" id="ai78"></td>
+                        <td class="box" id="ai79"></td>
+                    </tr>
+                    <tr class="cells" id="row8">
+                        <th class="box">I</th>
+                        <td class="box" id="ai80"></td>
+                        <td class="box" id="ai81"></td>
+                        <td class="box" id="ai82"></td>
+                        <td class="box" id="ai83"></td>
+                        <td class="box" id="ai84"></td>
+                        <td class="box" id="ai85"></td>
+                        <td class="box" id="ai86"></td>
+                        <td class="box" id="ai87"></td>
+                        <td class="box" id="ai88"></td>
+                        <td class="box" id="ai89"></td>
+                    </tr>
+                    <tr class="cells" id="row9">
+                        <th class="box">J</th>
+                        <td class="box" id="ai90"></td>
+                        <td class="box" id="ai91"></td>
+                        <td class="box" id="ai92"></td>
+                        <td class="box" id="ai93"></td>
+                        <td class="box" id="ai94"></td>
+                        <td class="box" id="ai95"></td>
+                        <td class="box" id="ai96"></td>
+                        <td class="box" id="ai97"></td>
+                        <td class="box" id="ai98"></td>
+                        <td class="box" id="ai99"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </hr>
+            <br>
+        </div>
     </div>
-    <!-- <div>
-        <table>
-            <td id="null"></td>
-            <td id="hit"></td>
-            <td id="miss"></td>
-        </table>
+    <!-- <div class="endgame">
+        <div class="text"></div>
     </div> -->
+            
+    
+    <button type="reset" id="reset">reset</button>
 
-    <script src="game.js"></script>
+            <script src="./js/game.js"></script>
+            <script src="./js/aiPlayer.js"></script>
 
 </body>
 

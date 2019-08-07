@@ -1,21 +1,50 @@
 body {
     background-color: black;
     text-align: center;
-    color: rgb(96, 231, 6);
-}
+     color: rgb(96, 231, 6); 
+ } 
 
+/* video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 
+} */
 
-.grid {
-    margin: auto 475px;
-    width: 50vw;
-    max-width: 30vh;
-    height: 50vw;
-    max-height: 30vh;
+.container {
     display: flex;
-    position: relative;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.Grid {
+    
+    width: 80vw;
+    max-width: 50vh;
+    height: 80vw;
+    max-height: 50vh;
+    
+}
+
+#playerGameBoard {
+    float: left;
+    
+    
+    
+}
+
+#aiGameBoard {
+    float: right;
+    
+   
+    
+}
+
+
 
 table {
     margin-left: auto;
@@ -33,8 +62,8 @@ table {
 .box {
     border: 1px solid rgb(150, 230, 3);
     margin: 3px;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     position: relative;
     color: rgb(84, 223, 4);
     cursor: crosshair;
@@ -47,5 +76,11 @@ h1 {
 p {
     color: rgb(94, 255, 0);
     margin-bottom: 50px;
+}
+
+button {
+    color: rgb(9, 255, 0);
+    background-color: black;
+    
 }
 
