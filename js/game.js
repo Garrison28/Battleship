@@ -10,7 +10,7 @@ document.getElementById('aiGameBoardContainer').addEventListener('click', humanT
 var playerHitCounter = 0;
 var aiHitCounter = 0;
 
-var torpedos = 55;
+var torpedos = 40;
 
 // Ship pieces and there size
 //     carrier1 = [1, 1, 1, 1, 1],
@@ -94,11 +94,9 @@ function fireTorpedo(e) {
         if (torpedos == 0) {
             alert('You have run out of torpedos! You Lose');
             console.log(torpedos);
-            document.getElementById('aiGameBoardContainer').removeEventListener('click', humanTurn, false);
+            
         }
-        else if (currentBoard[row][col] > 1) {
-            // alert('You/ve already hit that square!');
-        }
+        
 
     }
     e.stopPropagation();
