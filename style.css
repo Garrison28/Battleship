@@ -52,11 +52,14 @@ table {
     background-color: rgb(0, 68, 255);
 }
 
-
+.box:hover {
+    background-color: aqua;
+}
 
 .cells {
     display: flex;
     border: 1px solid rgb(112, 228, 4);
+
 }
 
 .box {
@@ -81,6 +84,8 @@ p {
 button {
     color: rgb(9, 255, 0);
     background-color: black;
+    margin: 40px;
+    padding: 5px;
     
 }
 
